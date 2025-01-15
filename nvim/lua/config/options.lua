@@ -3,6 +3,6 @@
 -- Add any additional options here
 
 if vim.g.neovide then
-  vim.o.guifont = "JetBrainsMono Nerd Font Mono:h11" -- text below applies for VimScript
-  vim.g.neovide_transparency = 0.8
+  vim.o.guifont = "JetBrainsMono Nerd Font:h12" -- text below applies for VimScript
+  vim.g.neovide_transparency = 0.75
 end
