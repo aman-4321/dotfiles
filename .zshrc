@@ -88,6 +88,7 @@ autoload -U compinit && compinit
 # Preferred editor for local and remote sessions
 # if [[ -n $SSH_CONNECTION ]]; then
   export EDITOR='nvim'
+  export VISUAL='nvim'
 # else
 #   export EDITOR='mvim'
 # fi
@@ -106,13 +107,15 @@ autoload -U compinit && compinit
 
 #alias
 alias gi="git init"
-alias gs="git status"
+alias gst="git status"
+alias gs="git switch"
 alias ga="git add"
 alias gr="git remote -v"
 alias gc="git checkout"
 alias gm="git commit -m"
 alias gb="git branch"
 alias gp="git push origin"
+alias gpo="git pull origin"
 alias t="tmux new -s"
 alias tk="tmux kill-session -t"
 alias td="tmux detach"
@@ -122,6 +125,7 @@ alias n="nvim"
 alias lg="lazygit"
 alias ls="eza --icons=always"
 alias c="clear"
+alias e="exit"
 alias yy="yazi"
 alias pn="pnpm"
 alias ld="lazydocker"
@@ -134,6 +138,9 @@ alias tm="trash-empty"
 alias ws="websocat"
 alias g="g++"
 alias nrd="npm run dev"
+alias brd="bun run dev"
+alias m="mpv --hwdec=auto"
+alias neo="neovide"
 
 # Zoxide
 eval "$(zoxide init zsh)"
@@ -165,3 +172,12 @@ source <(kubectl completion zsh)
 
 # hardware acceleration
 export VDPAU_DRIVER=nvidia
+
+#Solana
+PATH="/home/aman/.local/share/solana/install/active_release/bin:$PATH"
+
+# Golang
+export PATH=$PATH:/home/aman/go/bin
+
+# Treminal
+export TERMINAL=ghostty
